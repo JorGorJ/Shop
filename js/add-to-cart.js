@@ -55,9 +55,9 @@ const addToCart = (item, classes) => {
 	const textContainer = document.createElement('div')
 	textContainer.classList.add(classes.textContainer)
 
-	const productName = document.createElement('p')
-	productName.classList.add(classes.name)
-	productName.textContent = item.name
+	const name = document.createElement('p')
+	name.classList.add(classes.name)
+	ngame.textContent = item.name
 
 	const price = document.createElement('p')
 	price.classList.add(classes.price)
@@ -67,7 +67,7 @@ const addToCart = (item, classes) => {
 	fullPrice.classList.add(classes.fullPrice)
 	fullPrice.textContent = '$' + item.price * item.amount + '.00'
 
-	textContainer.appendChild(productName)
+	textContainer.appendChild(name)
 	price.appendChild(fullPrice)
 	textContainer.appendChild(price)
 	mainContainer.appendChild(textContainer)
@@ -87,6 +87,6 @@ const addToCart = (item, classes) => {
 	console.log('test')
 }
 
-btnAddToCart.addEventListener('click', addToCart(productDetails, productClass))
+btnAddToCart.addEventListener('click', () => addToCart(productDetails, productClass))
 
 quantityBtns.forEach(btn => btn.addEventListener('click', amountMenage))
