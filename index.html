@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <nav class="navbar wrapper">
+
+    <div class="navbar__lightbox"></div>
+
+    <div class="navbar__elements">
+      <button class="navbar__elements-burger">
+        <img src="./images/icon-menu.svg" alt="Open menu" class="burger-img">
+      </button>
+
+      <a href="" class="navbar__elements-logo">
+        <img class="logo-img" src="./images/logo.svg" alt="Logo Sneaker">
+      </a>
+
+      <div class="navbar__elements-menu">
+        <a href="#" class="menu-link">Collections</a>
+        <a href="#" class="menu-link">Men</a>
+        <a href="#" class="menu-link">Women</a>
+        <a href="#" class="menu-link">About</a>
+        <a href="#" class="menu-link">Contact</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar__mobile">
+
+      <button class="navbar__mobile-close">
+        <img src="./images/icon-close.svg" alt="Close menu" class="close-icon">
+      </button>
+
+      <div class="navbar__mobile-menu">
+        <a href="#" class="menu-link">Collections</a>
+        <a href="#" class="menu-link">Men</a>
+        <a href="#" class="menu-link">Women</a>
+        <a href="#" class="menu-link">About</a>
+        <a href="#" class="menu-link">Contact</a>
+      </div>
+    </div>
+
+    <div class="navbar__details">
+      <button class="navbar__details-cart">
+        <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon">
+      </button>
+      <button class="navbar__details-profile">
+        <img src="./images/image-avatar.png" alt="Profile image" class="profile-img">
+      </button>
+    </div>
+
+    <div class="navbar__cart-container">
+      <div class="cart">
+        <div class="cart__header">
+          <p class="cart__header-title">Cart</p>
+        </div>
+        <div class="cart__contents">
+          <!-- <p class="products-empty">Your cart is empty.</p> -->
+
+          <div class="product">
+            <div class="product__img"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+            <div class="product__text">
+              <p class="product__text-name">Fall Limited Edition Sneakers</p>
+              <p class="product__text-price">$125.00 x 3 <strong class="full-amount">$375.00</strong></p>
+            </div>
+            <button class="product__remove"><img class="test" src="./images/icon-delete.svg" alt=""
+                class="product__remove-trash-icon">
+            </button>
+          </div>
+
+        </div>
+        <button class="btn btn-checkout">Checkout</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="offer wrapper">
+
+      <div class="offer__images">
+
+
+        <div class="offer__images-product">
+          <div class="arrows-container">
+            <div class="arrows">
+              <button class="arrows-btn arrow-previous"> <img src="/images/icon-previous.svg" alt="Previous image"
+                  class="arrow-icon"></button>
+              <button class="arrows-btn arrow-next"><img src="/images/icon-next.svg" alt="Next image"
+                  class="arrow-icon">
+              </button>
+            </div>
+          </div>
+          <div class="images-product">
+
+            <img class="product-img" src="./images/image-product-1.jpg" alt="Shoes 1">
+            <img class="product-img disable-desktop" src="./images/image-product-2.jpg" alt="Shoes 2">
+            <img class="product-img disable-desktop" src="./images/image-product-3.jpg" alt="Shoes 3">
+            <img class="product-img disable-desktop" src="./images/image-product-4.jpg" alt="Shoes 4">
+
+
+
+          </div>
+        </div>
+
+        <div class="offer__images-thumbnail ">
+          <img class="first-thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="Shoes 1 thumbnail"
+            class="product-thumbnail">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Shoes 2 thumbnail" class="product-thumbnail">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="Shoes 3 thumbnail" class="product-thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="Shoes 4 thumbnail" class="product-thumbnail">
+        </div>
+      </div>
+      <div class="offer__details">
+
+        <div class="offer__details-product">
+          <p class="product-category">Sneaker Company</p>
+          <h2 class="product-title">Fall Limited Edition Sneakers</h2>
+          <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring
+            a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        </div>
+
+        <div class="offer__details-price">
+          <strong class="price">$125.00 <span class="rabat">-50%</span></strong>
+          <s class="old-price">$250.00</s>
+        </div>
+
+        <div class="offer__details-quantity">
+          <div class="quantity">
+            <button class="quantity__less quantity-btn"><img src="./images/icon-minus.svg" alt="More product"
+                class="quantity__icon"></button>
+            <div class="quantity__number">
+              <p class="quantity__number-amount">0</p>
+            </div>
+            <button class="quantity__more quantity-btn"><img src="./images/icon-plus.svg" alt="Less product"
+                class="quantity__icon"></button>
+          </div>
+          <button class="btn product-add">Add to cart</button>
+        </div>
+
+
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!--
+
+  
+
+  
+
+  
+
+  $125.00
+  50%
+  $250.00
+
+  0
+   -->
+  <script src="./js/add-to-cart.js"></script>
+  <script src="./js/slider-mobile.js"></script>
+  <script src="./js/cart-logic.js"></script>
+  <script src="./js/burger-btn.js"></script>
+</body>
+
+</html>
